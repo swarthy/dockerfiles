@@ -1,4 +1,4 @@
-FROM maryville/rabbitmq
+FROM redis:3.2-alpine
 
 COPY docker-healthcheck /usr/local/bin/
 
