@@ -2,8 +2,8 @@ FROM node:alpine
 
 RUN apk add --no-cache tini
 
-COPY test.js /test.js
-
 ENTRYPOINT ["/sbin/tini", "--"]
+
+COPY test.js /test.js
 
 CMD ["node", "/test.js"]
